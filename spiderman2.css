@@ -31,17 +31,18 @@ body{
     text-decoration: none;
     transition: color 0.3s;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 #navbar li a::after{
     content: '';
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0;
     width: 0;
     height: 2px;
     background-color: #a84ef5;
-    transition: width 0.3s;
+    transition: width 0.4s;
 }
 #navbar li a:hover::after{
     width: 100%;
@@ -49,3 +50,4 @@ body{
 #navbar li a:hover{
     color: #a84ef5;
 }
+
